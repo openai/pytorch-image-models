@@ -1396,7 +1396,7 @@ def efficientnet_b0(pretrained=False, num_classes=1000, in_chans=3, **kwargs):
     """ EfficientNet-B0 """
     default_cfg = default_cfgs['efficientnet_b0']
     # NOTE for train, drop_rate should be 0.2
-    #kwargs['drop_connect_rate'] = 0.2  # set when training, TODO add as cmd arg
+    kwargs['drop_connect_rate'] = 0.2  # set when training, TODO add as cmd arg
     model = _gen_efficientnet(
         channel_multiplier=1.0, depth_multiplier=1.0,
         num_classes=num_classes, in_chans=in_chans, **kwargs)
@@ -1411,7 +1411,7 @@ def efficientnet_b1(pretrained=False, num_classes=1000, in_chans=3, **kwargs):
     """ EfficientNet-B1 """
     default_cfg = default_cfgs['efficientnet_b1']
     # NOTE for train, drop_rate should be 0.2
-    #kwargs['drop_connect_rate'] = 0.2  # set when training, TODO add as cmd arg
+    kwargs['drop_connect_rate'] = 0.2  # set when training, TODO add as cmd arg
     model = _gen_efficientnet(
         channel_multiplier=1.0, depth_multiplier=1.1,
         num_classes=num_classes, in_chans=in_chans, **kwargs)
@@ -1426,7 +1426,7 @@ def efficientnet_b2(pretrained=False, num_classes=1000, in_chans=3, **kwargs):
     """ EfficientNet-B2 """
     default_cfg = default_cfgs['efficientnet_b2']
     # NOTE for train, drop_rate should be 0.3
-    #kwargs['drop_connect_rate'] = 0.2  # set when training, TODO add as cmd arg
+    kwargs['drop_connect_rate'] = 0.3  # set when training, TODO add as cmd arg
     model = _gen_efficientnet(
         channel_multiplier=1.1, depth_multiplier=1.2,
         num_classes=num_classes, in_chans=in_chans, **kwargs)
@@ -1441,7 +1441,7 @@ def efficientnet_b3(pretrained=False, num_classes=1000, in_chans=3, **kwargs):
     """ EfficientNet-B3 """
     default_cfg = default_cfgs['efficientnet_b3']
     # NOTE for train, drop_rate should be 0.3
-    #kwargs['drop_connect_rate'] = 0.2  # set when training, TODO add as cmd arg
+    kwargs['drop_connect_rate'] = 0.3  # set when training, TODO add as cmd arg
     model = _gen_efficientnet(
         channel_multiplier=1.2, depth_multiplier=1.4,
         num_classes=num_classes, in_chans=in_chans, **kwargs)
@@ -1456,7 +1456,7 @@ def efficientnet_b4(pretrained=False, num_classes=1000, in_chans=3, **kwargs):
     """ EfficientNet-B4 """
     default_cfg = default_cfgs['efficientnet_b4']
     # NOTE for train, drop_rate should be 0.4
-    #kwargs['drop_connect_rate'] = 0.2  #  set when training, TODO add as cmd arg
+    kwargs['drop_connect_rate'] = 0.4  #  set when training, TODO add as cmd arg
     model = _gen_efficientnet(
         channel_multiplier=1.4, depth_multiplier=1.8,
         num_classes=num_classes, in_chans=in_chans, **kwargs)
@@ -1470,7 +1470,7 @@ def efficientnet_b4(pretrained=False, num_classes=1000, in_chans=3, **kwargs):
 def efficientnet_b5(pretrained=False, num_classes=1000, in_chans=3, **kwargs):
     """ EfficientNet-B5 """
     # NOTE for train, drop_rate should be 0.4
-    #kwargs['drop_connect_rate'] = 0.2  # set when training, TODO add as cmd arg
+    kwargs['drop_connect_rate'] = 0.4  # set when training, TODO add as cmd arg
     default_cfg = default_cfgs['efficientnet_b5']
     model = _gen_efficientnet(
         channel_multiplier=1.6, depth_multiplier=2.2,
@@ -1486,7 +1486,7 @@ def efficientnet_b5(pretrained=False, num_classes=1000, in_chans=3, **kwargs):
 def efficientnet_b6(pretrained=False, num_classes=1000, in_chans=3, **kwargs):
     """ EfficientNet-B6 """
     # NOTE for train, drop_rate should be 0.5
-    #kwargs['drop_connect_rate'] = 0.2  # set when training, TODO add as cmd arg
+    kwargs['drop_connect_rate'] = 0.5  # set when training, TODO add as cmd arg
     default_cfg = default_cfgs['efficientnet_b6']
     model = _gen_efficientnet(
         channel_multiplier=1.8, depth_multiplier=2.6,
@@ -1501,7 +1501,7 @@ def efficientnet_b6(pretrained=False, num_classes=1000, in_chans=3, **kwargs):
 def efficientnet_b7(pretrained=False, num_classes=1000, in_chans=3, **kwargs):
     """ EfficientNet-B7 """
     # NOTE for train, drop_rate should be 0.5
-    #kwargs['drop_connect_rate'] = 0.2  # set when training, TODO add as cmd arg
+    kwargs['drop_connect_rate'] = 0.5  # set when training, TODO add as cmd arg
     default_cfg = default_cfgs['efficientnet_b7']
     model = _gen_efficientnet(
         channel_multiplier=2.0, depth_multiplier=3.1,
